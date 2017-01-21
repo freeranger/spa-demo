@@ -6,5 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-City.create(name: 'Baltimore')
-State.create(name: 'Maryland')
+city = City.find_or_initialize_by(name: 'Baltimore')
+city.name = 'Baltimore'
+city.save!
+
+
+state = State.find_or_initialize_by(name: 'Maryland')
+state.name = 'Maryland'
+state.save!
