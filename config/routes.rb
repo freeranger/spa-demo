@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :cities, except: [:new, :edit]
   scope :api, defaults: { format: :json} do
     resources :foos, except: [:new, :edit]
     resources :bars, except: [:new, :edit]
+    resources :cities, except: [:new, :edit]
   end
 
   get '/ui' => 'ui#index'
