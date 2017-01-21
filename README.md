@@ -1,1 +1,3 @@
-# Capstone Demo Application (Docker)
+# Capstone Demo Application
+
+Assignment 1.
