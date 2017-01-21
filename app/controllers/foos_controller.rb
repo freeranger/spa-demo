@@ -1,11 +1,8 @@
 class FoosController < ApplicationController
   before_action :set_foo, only: [:show, :update, :destroy]
 
-  # GET /foos
-  # GET /foos.json
   def index
     @foos = Foo.all
-
     #render json: @foos
   end
 
