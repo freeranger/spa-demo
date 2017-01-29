@@ -1,7 +1,9 @@
 (function() {
- "use strict";
+  "use strict";
 
-    angular
-           .module("spa-demo", ["ui.router"]);
-
+  angular
+    .module("spa-demo", [
+      "ui.router",
+      "spa-demo.foos"
+    ]);
 })();
